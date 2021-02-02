@@ -17,4 +17,10 @@ public class DataSyncController {
     public String findBrandById(Long id) {
         return eshopProductService.findBrandById(id);
     }
+
+    @RequestMapping("findCategoryById")
+    @ResponseBody
+    public String findCategoryById(Long id) {
+        return eshopProductService.findCategoryById(id);
+    }
 }
